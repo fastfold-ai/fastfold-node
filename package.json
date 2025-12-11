@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "author": "FastFold <hello@fastfold.ai>",
   "homepage": "https://fastfold.ai",
-  "repository": "github:fastfold/fastfold-node",
+  "repository": "github:fastfold-ai/fastfold-node",
   "keywords": [
     "protein",
     "folding",
