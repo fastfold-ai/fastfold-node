@@ -1,0 +1,41 @@
+{
+  "name": "fastfold-ai",
+  "version": "0.1.0",
+  "description": "FastFold TypeScript SDK and CLI for submitting folding jobs",
+  "license": "UNLICENSED",
+  "author": "FastFold <hello@fastfold.ai>",
+  "homepage": "https://fastfold.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://fastfold.ai"
+  },
+  "keywords": [
+    "protein",
+    "folding",
+    "ai",
+    "fastfold",
+    "sdk",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "fastfold": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^20.11.30"
+  }
+}
+
+
