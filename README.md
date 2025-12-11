@@ -1,6 +1,6 @@
 # Fastfold AI Typescript SDK
 
-Production-ready JavaScript/TypeScript SDK and CLI for the Fastfold API.
+JavaScript/TypeScript SDK and CLI for the Fastfold API.
 
 ## Quick Start
 
