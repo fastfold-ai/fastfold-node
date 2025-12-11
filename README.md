@@ -48,23 +48,48 @@ const response = await client.fold.create({
   model: 'boltz-2',
 });
 
-console.log(response.cif_link ?? response.id);
+console.log(response.id);
 ```
 
-CommonJS users can wrap in an async IIFE:
+Run it with TS runner:
 
-```js
-const { Client } = require('fastfold-ai');
+- macOS / Linux:
 
-const client = new Client();
+```bash
+FASTFOLD_API_KEY="your_api_key_here" npx tsx example.ts
+```
+
+- Windows (PowerShell):
+
+```powershell
+$env:FASTFOLD_API_KEY="your_api_key_here"; npx tsx example.ts
+```
+
+CommonJS users (Node CJS) can wrap in an async IIFE and use ts-node:
+
+```ts
+import { Client } from 'fastfold-ai';
 
 (async () => {
+  const client = new Client();
   const response = await client.fold.create({
     sequence: 'LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES',
     model: 'boltz-2',
   });
-  console.log(response.cif_link ?? response.id);
+  console.log(response.id);
 })();
+```
+
+- macOS / Linux:
+
+```bash
+FASTFOLD_API_KEY="your_api_key_here" npx ts-node example.ts
+```
+
+- Windows (PowerShell):
+
+```powershell
+$env:FASTFOLD_API_KEY="your_api_key_here"; npx ts-node example.ts
 ```
 
 ## Next steps
